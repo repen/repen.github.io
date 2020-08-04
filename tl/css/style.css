@@ -187,7 +187,7 @@ figure {
 }
 
 .fh5co-section {
-  padding: 5em 0;
+  padding: 2em 0;
 }
 @media screen and (max-width: 768px) {
   .fh5co-section {
@@ -1038,3 +1038,9 @@ figure {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.img_custom1 {
+  width: 200px;
+  padding: 10px;
+  /*margin: 15px 15px;*/
+}
