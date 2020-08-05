@@ -1,0 +1,229 @@
+/* 
+Nells Park Style
+*/
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.intro {
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.intro:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.intro__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.intro__title {
+	margin: 0;
+	font-size: 45px;
+	color: ivory;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+}
+
+.video{
+	position: relative;
+	z-index: 1;
+	padding-bottom: 56.25%;
+
+}
+
+.video__media {
+	width: 100%;
+	height: auto;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+q {
+	color: rgb(158, 209, 117);
+	font-size: 25px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+
+
+
+#nells_header .nav_menu {
+	width: 150px;
+	margin: 0 0 80px 0;
+	padding: 0;
+	list-style: none
+}
+
+#nells_header {
+	position: absolute;
+	width: 155px;
+	height: 600px;
+	top: 20px;
+	left: 15px;
+	padding: 40px 5px 20px;
+	z-index: 1000;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 11px;
+    background: hsla(80, 2%, 30%, 0.5) 
+}
+#nells_header .nav_menu li a {
+	display: block;
+	line-height: 28px;
+	color: #ffffff;
+	font-size: 24px;
+	text-align: left;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#nells_header .nav_menu li a:hover {
+	color: rgb(14, 241, 109)
+}
+
+.social_button { display: block; text-align: center; height: 24px; margin-bottom: 10px }
+.social_button a { display: block; float: left; width: 24px; height: 24px; margin-left: 17px; }
+
+
+#site_title { 
+	display: block; 
+	width: 142px; 
+	height: 60px; 
+	margin-bottom: 70px; 
+	border-bottom: 2px dashed rgb(255, 255, 255);   
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+button{
+	padding: 2px;
+	margin-top: 10px;
+	position: relative;
+	background-color: rgb(158, 209, 117);
+}
+
+.tabelle {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 20px;
+	width: 640px;
+	text-align: left;
+	background: transparent 50%;
+	margin: 0 auto;
+	width: 800px;
+	z-index: 3;
+	background: hsla(80, 2%, 30%, 0.5);
+  }
+  .tabelle th {
+	color: #EDB749;
+	border-bottom: 1px solid rgb(155, 25, 2);
+	padding: 12px 17px;
+	z-index: 3;
+  }
+  .tabelle td {
+	color: #CAD4D6;
+	border-bottom: 1px solid #37B5A5;
+	border-right:1px solid #37B5A5;
+	padding: 7px 17px;
+	z-index: 3;
+  }
+  .tabelle tr:last-child td {
+	border-bottom: none;
+  }
+  .table_tabelledark td:last-child {
+	border-right: none;
+  }
+  .tabelle tr:hover td {
+	text-decoration: underline;
+   }
+
+#nells_wrapper {
+    position: fixed;
+    top: 0;
+    
+    color: #ffffff;
+    width: 100%;
+	padding: 20px;
+	z-index: 3;
+}
+
+
+
+/*------Modalfenster ---------
+
+
+/* Style für Fenster */
+
+.modal {
+
+   /* Das Fenster zu machen  */
+   opacity: 0;
+   visibility: hidden;
+
+
+   /*  die Lange vom Fesnter  */
+   width: auto;
+
+   /*  im Zentrum einstellen und z-index angeben */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30; /* da es ganz oden stehen muss*/
+
+   /*  andere Effekten   */
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+   text-align: center;
+   padding: 30px;
+   border-radius: 3px;
+   background-color: #fff;
+   transition: 0.3s all;
+}
+
+
+/* Stile für aktive Hintergrund- und Fensterklassen */
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+/* Stile für die Funktion zum Schließen*/
+
+.modal__cross {
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   fill: rgb(214, 10, 10);
+   cursor: pointer;
+}
